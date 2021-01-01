@@ -6,7 +6,9 @@ def using_unshift(array, string)
   array.unshift(string)
 end
 
-
+def using_pop(array)
+  array.pop()
+end
 describe "using_pop" do
   before(:each) do 
     @continents = ["Africa", "Asia", "Europe", "North America", "South America", "Oceania", "Antarctica"]
