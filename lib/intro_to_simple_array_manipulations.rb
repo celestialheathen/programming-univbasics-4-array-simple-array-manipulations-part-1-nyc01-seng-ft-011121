@@ -12,8 +12,9 @@ end
 
 def pop_with_args(array)
   new_array = Array.new
-  new_array = array.pop()
-  
+  new_array[0] = array.pop()
+  new_array[1] = array.pop()
+end
 
 describe "pop_with_args" do
   before(:each) do 
