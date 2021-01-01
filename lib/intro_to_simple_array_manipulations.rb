@@ -17,33 +17,13 @@ def pop_with_args(array)
   return new_array
 end
 
-describe "pop_with_args" do
-  before(:each) do 
-    @dog_breeds = ["Great Dane", "Golden Retriever", "Chihuahua", "Shiba Inu"]
-    @small_dogs = pop_with_args(@dog_breeds)
-  end 
-  it "takes in an argument of an array and uses the pop method with an argument of 2 to remove the last two array items and return them" do 
-    expect(@small_dogs).to eq(["Chihuahua", "Shiba Inu"])
-  end 
-
-  it "decreases the length of the array by 2" do
-    expect(@dog_breeds.size).to eq(2)
-  end
+def using_shift(array)
+  return array.shift()
 end
 
-describe "using_shift" do 
-  before(:each) do 
-    @my_favorite_cities = ["Lagos", "Cape Town", "Nairobi", "San Francisco", "Gaborone", "New York", "Berlin", "London"]
-    @im_so_over_this_city = using_shift(@my_favorite_cities)
-  end
-  it "takes in an argument of an array and uses the shift method to remove the first item and return it" do 
-    expect(@im_so_over_this_city).to eq("Lagos")
-  end
+def shift_with_args(array)
+  
 
-  it "decreases the length of the array by 1" do 
-    expect(@my_favorite_cities.size).to eq(7)
-  end
-end
 
 describe "shift_with_args" do 
   before(:each) do 
